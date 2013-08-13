@@ -10,6 +10,8 @@ Put this in your composer.json require object:
 "mike-funk/laravel-form-extensions": "dev-master"
 ```
 
+Then run ```composer install```
+
 Then put this in your ```app/config/app.php``` under providers:
 
 ```php
@@ -22,7 +24,7 @@ Then change the binding for the Form facade in app/config/app.php under aliases:
 'Form' => 'MikeFunk\LaravelFormExtensions\LaravelFormExtensions'
 ```
 
-Then run ```composer dump-autoload``` and you should be good to go.
+You should be ready to rock!
 
 ## Usage
 
