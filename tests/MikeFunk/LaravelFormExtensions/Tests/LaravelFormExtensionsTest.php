@@ -5,7 +5,6 @@
  */
 namespace MikeFunk\LaravelFormExtensions\Tests;
 
-use Illuminate\Support\Facades\View;
 use MikeFunk\LaravelFormExtensions\LaravelFormExtensions as Form;
 
 /**
@@ -33,7 +32,9 @@ class LaravelFormExtensionsTest extends \PHPUnit_Framework_TestCase
      */
     public function testBooleanCheckbox()
     {
-        $this->form->booleanCheckbox('joe');
-        $this->markTestIncomplete();
+        $expected = '<input type="hidden" name="joe" value="0" />' . "\n";
+        $expected .= '<input type="checkbox" name="joe" value="1" />' . "\n";
+        $actual = $this->form->booleanCheckbox('joe');
+        $this->assertEquals($expected, $actual);
     }
 }

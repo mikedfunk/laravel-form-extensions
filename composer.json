@@ -12,10 +12,7 @@
         "illuminate/support": "4.0.x"
     },
     "require-dev": {
-        "illuminate/html": "4.0.x",
-        "illuminate/view": "4.0.x",
-        "illuminate/foundation": "4.0.x",
-        "mockery/mockery": "*"
+        "illuminate/html": "4.0.x"
     },
     "autoload": {
         "psr-0": {

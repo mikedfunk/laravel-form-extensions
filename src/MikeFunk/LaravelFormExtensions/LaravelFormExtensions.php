@@ -6,7 +6,6 @@
 namespace MikeFunk\LaravelFormExtensions;
 
 use Illuminate\Support\Facades\Form as LaravelForm;
-use Illuminate\Support\Facades\View;
 
 /**
  * Form helper
@@ -26,9 +25,16 @@ class LaravelFormExtensions extends LaravelForm
      */
     public static function booleanCheckbox($name, $checked = null, $options = array())
     {
-        return View::make(
-            'laravel-form-extensions:boolean_checkbox_view',
-            compact('name, checked, options')
-        );
+        // set up the hidden field, start the main checkbox, check it if true
+        $return = '<input type="hidden" name="'.$name.'" value="0" />'."\n";
+        $return .= '<input type="checkbox" name="'.$name.'" value="1" ';
+        $return .= $checked ? 'checked="checked" ' : '';
+
+        // for each html param passed, add it to the input and close it up
+        foreach ($options as $key => $value) {
+            $return .= $key.'="'.$value.'" ';
+        }
+        $return .= '/>'."\n";
+        return $return;
     }
 }
