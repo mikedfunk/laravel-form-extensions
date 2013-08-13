@@ -1,0 +1,25 @@
+{
+    "name": "mike-funk/laravel-form-extensions",
+    "description": "",
+    "authors": [
+        {
+            "name": "Mike Funk",
+            "email": "mike@mikefunk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "require-dev": {
+        "illuminate/html": "4.0.x",
+        "illuminate/view": "4.0.x",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MikeFunk\\LaravelFormExtensions": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
