@@ -33,8 +33,8 @@ class LaravelFormExtensionsTest extends \PHPUnit_Framework_TestCase
     public function testBooleanCheckbox()
     {
         $expected = '<input type="hidden" name="joe" value="0" />' . "\n";
-        $expected .= '<input type="checkbox" name="joe" value="1" />' . "\n";
-        $actual = $this->form->booleanCheckbox('joe');
+        $expected .= '<input type="checkbox" name="joe" value="1" checked="checked" class="awesome" />' . "\n";
+        $actual = $this->form->booleanCheckbox('joe', true, array('class' => 'awesome'));
         $this->assertEquals($expected, $actual);
     }
 }
