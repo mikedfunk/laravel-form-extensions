@@ -33,7 +33,6 @@ class LaravelFormExtensionsTest extends \PHPUnit_Framework_TestCase
      */
     public function testBooleanCheckbox()
     {
-        View::shouldReceive('make');
         $this->form->booleanCheckbox('joe');
         $this->markTestIncomplete();
     }
