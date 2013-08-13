@@ -6,15 +6,21 @@ At the moment this only contains ```booleanCheckbox()```.
 
 Put this in your composer.json require object:
 
-```"mike-funk/laravel-form-extensions": "dev-master"```
+```json
+"mike-funk/laravel-form-extensions": "dev-master"
+```
 
 Then put this in your ```app/config/app.php``` under providers:
 
-```MikeFunk\LaravelFormExtensions\LaravelFormExtensionsServiceProvider```
+```php
+"MikeFunk\LaravelFormExtensions\LaravelFormExtensionsServiceProvider"
+```
 
 Then change the binding for the Form facade in app/config/app.php under aliases:
 
-```'Form' => 'MikeFunk\LaravelFormExtensions\LaravelFormExtensions'```
+```php
+'Form' => 'MikeFunk\LaravelFormExtensions\LaravelFormExtensions'
+```
 
 Then run ```composer dump-autoload``` and you should be good to go.
 
