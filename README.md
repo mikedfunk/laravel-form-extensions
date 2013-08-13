@@ -10,12 +10,12 @@ Put this in your composer.json require object:
 "mike-funk/laravel-form-extensions": "dev-master"
 ```
 
-Then run ```composer install```
+Then run ```composer update```
 
 Then put this in your ```app/config/app.php``` under providers:
 
 ```php
-"MikeFunk\LaravelFormExtensions\LaravelFormExtensionsServiceProvider"
+'MikeFunk\LaravelFormExtensions\LaravelFormExtensionsServiceProvider'
 ```
 
 Then change the binding for the Form facade in app/config/app.php under aliases:
