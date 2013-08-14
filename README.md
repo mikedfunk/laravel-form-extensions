@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/mikedfunk/laravel-form-extensions.png?branch=master)](http://travis-ci.org/mikedfunk/laravel-form-extensions)
+
 # Laravel Form Extensions
 
 At the moment this only contains ```booleanCheckbox()```.
