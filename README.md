@@ -20,7 +20,7 @@ Then put this in your ```app/config/app.php``` under providers:
 'MikeFunk\LaravelFormExtensions\LaravelFormExtensionsServiceProvider'
 ```
 
-Then change the binding for the Form facade in app/config/app.php under aliases:
+Then change the binding for the Form facade in ```app/config/app.php``` under aliases:
 
 ```php
 'Form' => 'MikeFunk\LaravelFormExtensions\LaravelFormExtensions'
