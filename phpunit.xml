@@ -15,4 +15,9 @@
             <directory suffix=".php">./tests/MikeFunk/LaravelFormExtensions/Tests/</directory>
         </testsuite>
     </testsuites>
+
+    <logging>
+            <log type="coverage-html" target="build/coverage" title="Bookymark" />
+    </logging>
+
 </phpunit>

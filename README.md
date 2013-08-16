@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/mikedfunk/laravel-form-extensions.png?branch=master)](http://travis-ci.org/mikedfunk/laravel-form-extensions)
+[![Build Status](https://travis-ci.org/mikedfunk/laravel-form-extensions.png?branch=master)](https://travis-ci.org/mikedfunk/laravel-form-extensions) [![Coverage Status](https://coveralls.io/repos/mikedfunk/laravel-form-extensions/badge.png?branch=master)](https://coveralls.io/r/mikedfunk/laravel-form-extensions)
 
 # Laravel Form Extensions
 
